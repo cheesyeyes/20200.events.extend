@@ -1,1 +1,3 @@
-# 20001.world.syntax
+# 2020.events.extends
+
+# event emitter and class extensions
