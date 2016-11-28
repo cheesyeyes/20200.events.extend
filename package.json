@@ -1,0 +1,22 @@
+{
+  "name": "20200.events.extend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "develop": "budo ./src/index.js --live -- -t babelify",
+    "build": "browserify ./src/index.js -o ./bui/index.js -t [ babelify --presets [ es2015 ] ]",
+    "minify": "uglifyjs ./bui/index.js -cm --preamble '// @author Florian Maxim Brüggemann' -o ./bui/index.min.js"
+  },
+  "author": "Florian Maxim Brüggemann",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "budo": "^9.2.2",
+    "events": "^1.1.1",
+    "three": "^0.82.1",
+    "watchify": "^3.7.0"
+  }
+}
