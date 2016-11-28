@@ -355,6 +355,10 @@ var Events = function () {
 
 var ee = new Events();
 
+ee.on('push', function () {
+  console.log('you pushed me!');
+});
+
 ee.on('push', function (name) {
   console.log(name + ' you moose!');
 });

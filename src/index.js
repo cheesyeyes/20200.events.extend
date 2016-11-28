@@ -24,6 +24,10 @@ class Events {
 
 const ee = new Events();
 
+ee.on('push', () => {
+  console.log('you pushed me!');
+});
+
 ee.on('push', (name) => {
   console.log(name+' you moose!');
 });
